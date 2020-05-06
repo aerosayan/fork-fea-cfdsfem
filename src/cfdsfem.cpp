@@ -1,9 +1,9 @@
 /*
-! Program for 2D explicit finite element analysis of incompressible Navier-Stokes
+! Program for incompressible Navier-Stokes using Stabilised Finite Element Method
 !
 !
 ! Author: Dr. Chennakesava Kadapa
-! Date  : 17-May-2018
+! Date  : 06-May-2020
 ! Place : Swansea, UK
 !
 !
@@ -43,10 +43,6 @@ int main(int argc, char* argv[])
     stabfem.prepareInputData();
 
     stabfem.solveFullyImplicit();
-
-    //if( !infileOutput.empty() )
-
-    //cout << " cccccccccccccc " << endl;
 
     cout << " Program is successful \n " << endl;
 
