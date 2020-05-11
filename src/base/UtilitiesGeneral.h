@@ -1,5 +1,5 @@
-#ifndef incl_utilities_cfd_h
-#define incl_utilities_cfd_h
+#ifndef incl_utilitiesgeneral_h
+#define incl_utilitiesgeneral_h
 
 
 #include "headersBasic.h"
@@ -57,12 +57,6 @@ inline void printVector(double* data, int nn)
 
 
 void SetTimeParametersFluid(int tis, double rho, double dt, VectorXd& td);
-
-
-int computeBasisFunctions2D(bool flag, int ETYPE, int degree, double* param, double* xNode, double* yNode, double*  N, double*  dN_dx, double* dN_dy, double&  Jac);
-
-
-int computeBasisFunctions3D(bool flag, int ETYPE, int degree, double* param, double* xNode, double* yNode, double* zNode, double*  N, double*  dN_dx, double* dN_dy, double* dN_dz, double&  Jac);
 
 
 

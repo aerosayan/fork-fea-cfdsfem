@@ -7,10 +7,11 @@
 
 #include "LagrangeElem2DNavierStokesQuad4Node.h"
 #include "SolutionData.h"
-#include "QuadratureUtil.h"
+#include "UtilitiesQuadrature.h"
 #include "stabilisationRoutines.h"
 #include "KimMoinFlow.h"
-#include "elementutilitiescfd.h"
+#include "UtilitiesGeneral.h"
+#include "BasisFunctionsLagrange.h"
 
 
 using namespace std;

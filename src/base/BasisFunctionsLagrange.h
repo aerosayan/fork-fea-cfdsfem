@@ -4,6 +4,19 @@
 
 
 /**
+  Computes function values and the first derivative (wrt to spatial coordinates)
+  for basis functions for the 2D problem
+*/
+int computeBasisFunctions2D(bool flag, int ETYPE, int degree, double* param, double* xNode, double* yNode, double*  N, double*  dN_dx, double* dN_dy, double&  Jac);
+
+
+/**
+  Computes function values and the first derivative (wrt to spatial coordinates)
+  for basis functions for the 3D problem
+*/
+int computeBasisFunctions3D(bool flag, int ETYPE, int degree, double* param, double* xNode, double* yNode, double* zNode, double*  N, double*  dN_dx, double* dN_dy, double* dN_dz, double&  Jac);
+
+/**
   Computes function values, first derivative and second derivative of
   univariate Lagrange polynomials of a given order p for
 */

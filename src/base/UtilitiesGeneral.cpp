@@ -1,20 +1,5 @@
-/*
-! Subroutines for calculating the stiffness
-! and residual (or force) for the simple
-! Lagrange family of elements for
-!
-! Incompressible Navier-Stokes using
-! the stabilised formulation
-!
-! Author: Dr. Chennakesava Kadapa
-! Date  : 17-May-2018
-! Place : Swansea, UK
-!
-!
-*/
-
 #include "headersBasic.h"
-#include "elementutilitiescfd.h"
+#include "UtilitiesGeneral.h"
 
 
 void SetTimeParametersFluid(int tis, double rho, double dt, VectorXd& td)

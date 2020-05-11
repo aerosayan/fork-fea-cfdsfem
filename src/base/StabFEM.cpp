@@ -3,7 +3,7 @@
 #include <chrono>
 #include "StabFEM.h"
 #include "KimMoinFlow.h"
-#include "elementutilitiescfd.h"
+#include "UtilitiesGeneral.h"
 //#include "SolutionData.h"
 //#include "LagrangeElem2DNavierStokesTria3Node.h"
 #include "LagrangeElem2DNavierStokesQuad4Node.h"
@@ -39,11 +39,11 @@ StabFEM::~StabFEM()
     }
 
   phase = -1; error = 0;
-
+/*
   pardiso_(PT, &MAXFCT, &MNUM, &MTYPE, &phase,
            &totalDOF, array, &csr[0], &col[0], &perm[0], &NRHS,
            IPARM, &MSGLVL, &ddum, &ddum, &error, DPARM);
-
+*/
 }
 
 

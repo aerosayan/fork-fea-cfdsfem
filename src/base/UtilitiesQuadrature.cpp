@@ -1,4 +1,4 @@
-#include "QuadratureUtil.h"
+#include "UtilitiesQuadrature.h"
 
 #include <iostream>
 #include <math.h>
@@ -9,8 +9,6 @@ using namespace std;
 
 void getGaussPoints1D(int ngp, vector<double>& gausspoints, vector<double>& gaussweights)
 {
-  //cout << " ngp = " << ngp << endl;
-
   gausspoints.resize(ngp);
   gaussweights.resize(ngp);
 
